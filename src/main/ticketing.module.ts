@@ -13,7 +13,7 @@ import { TranslateService } from "@vcd/sdk/i18n";
 import {TicketingComponent} from './ticketing.component';
 import {ROUTES} from './ticketing.routes';
 
-import {ClarityModule} from 'clarity-angular';
+import {ClarityModule} from '@clr/angular';
 import { PluginModule } from '@vcd/sdk/core';
 
 @NgModule({

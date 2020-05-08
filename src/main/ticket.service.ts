@@ -3,7 +3,7 @@
  *  Copyright 2018 VMware, Inc. All rights reserved. VMware Confidential
  */
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable, of} from 'rxjs';
 
 import {Ticket} from './ticket';
 import {TICKETS} from './mock-tickets';
@@ -13,7 +13,7 @@ export class TicketService {
   ticketID = 200;
 
   getTickets(): Observable<Ticket[]> {
-    return Observable.of<Ticket[]>(TICKETS);
+    return of<Ticket[]>(TICKETS);
   }
 
   createTicket(description: string): Observable<Ticket> {
@@ -23,7 +23,7 @@ export class TicketService {
       "ticket_msg": description,
       "status": "Open"
     }
-    return Observable.of<Ticket>(ticket);
+    return of<Ticket>(ticket);
   }
 
   
@@ -35,6 +35,6 @@ export class TicketService {
         break;
       }
     }
-    return Observable.of<Ticket[]>(TICKETS);
+    return of<Ticket[]>(TICKETS);
   }
 }
