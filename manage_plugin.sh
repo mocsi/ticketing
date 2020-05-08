@@ -1,0 +1,1 @@
+/usr/bin/python manage_plugin.py $1

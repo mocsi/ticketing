@@ -1,0 +1,6 @@
+{
+  "username": "administrator",
+  "org": "System",
+  "password": "System",
+  "vcdUrlBase": "https://vcd.company.com"
+}
